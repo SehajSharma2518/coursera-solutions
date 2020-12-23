@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.75em;
+}
+
+dev {
+	float: left;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+}
+
+section {
+	position: relative;
+	display: block;
+	float: left;
+	border: 1px solid black;
+	margin: 10px;
+	padding: 10px;
+	background-color: #CCCCCC;
+}
+
+h2 {
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	border: 1px solid black;
+	margin: 0px;
+	padding: 5px;
+	font-size: 1.25em;
+}
+
+#menu_title_1 {
+	background-color: #A98765;
+}
+
+#menu_title_2 {
+	background-color: #ABCDEF;
+}
+
+#menu_title_3 {
+	background-color: #98789A;
+}
+
+p {
+	position: relative;
+	top: 20px;
+}
+
+/* desktop view */
+@media (min-width: 992px) {
+	.col_ld_4 {
+		/* subtract 20px for 10px left and right margins */
+		width: calc(33.33% - 20px);
+	}
+}
+
+ /* tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+	.col_md_6 {
+		/* subtract 20px for 10px left and right margins */
+		width: calc(50% - 20px);
+	}
+	.col_md_12 {
+		/* subtract 20px for 10px left and right margins */
+		width: calc(100% - 20px);
+	}
+}
+
+/* mobile view */
+@media (max-width: 767px) {
+	.col_sd_12 {
+		/* subtract 20px for 10px left and right margins */
+		width: calc(100% - 20px);
+	}
+}
